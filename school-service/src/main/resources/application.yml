@@ -1,7 +1,5 @@
-server:
-  port: 8090
 spring:
   application:
-    name: student-service
+    name: school-service
   config:
     import: optional:configserver:http://localhost:8888

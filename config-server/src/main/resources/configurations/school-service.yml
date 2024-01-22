@@ -1,0 +1,30 @@
+server:
+  port: 8070
+
+  # MySQL Database Configuration
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/schools
+    username: root
+    password: Jerry@123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+
+  # Additional properties related to MySQL
+  # spring.datasource.* and spring.jpa.* properties can be added here as needed
+
+# Eureka Client Configuration
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+
+application:
+  config:
+    students-url: http://localhost:8222/api/v1/students
