@@ -4,8 +4,6 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
-import java.util.ArrayList;
 import java.util.List;
 
 @Data
@@ -15,5 +13,5 @@ import java.util.List;
 public class FullSchoolResponse {
     private String name;
     private String email;
-    List<Student> students = new ArrayList<>();
+    private List<Student> students;
 }

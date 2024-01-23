@@ -2,10 +2,7 @@ package com.amalitech.org.schoolservice;
 
 import com.amalitech.org.schoolservice.client.StudentClient;
 import lombok.RequiredArgsConstructor;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.List;
 
@@ -38,5 +35,5 @@ public class SchoolService {
                 .email(school.getEmail())
                 .students(students)
                 .build();
-    }
+    }   
 }
